@@ -130,19 +130,12 @@ export default function Home() {
     const fetchPosts = async () => {
       const { data, error } = await supabase
         .from("posts_new")
-        //.select("*")
-        //.order("created_at", { ascending: false });
-        .select ("id, image_url, caption, likes")
-        .gt("likes", 5)
-        .order("likes", { ascending: false })
-        //.limit(10);
-
-        
-
+        .select("*")
+        .order("created_at", { ascending: false });
       if (error) {
         console.error("Error al obtener los posts:", error);
       } else {
-        console.log("Posts obtenidos:", data);   /// Agrega este log para verificar los datos obtenidos Weeeeeeeee
+        console.log("Posts ordenados por fecha: ", data);   /// Agrega este log para verificar los datos obtenidos Weeeeeeeee
         setPosts(data);
       }
     };
