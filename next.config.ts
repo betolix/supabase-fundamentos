@@ -19,6 +19,12 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "oefjsifvvltrjqqcrbha.supabase.co", // reemplazan tu_subdominio por su subdominio ejem xhgfdfgdsfdhgsuuhy
       },
+      {
+        protocol: 'https',
+        hostname: 'oefjsifvvltrjqqcrbha.supabase.co',
+        port: '',
+        pathname: '/storage/v1/object/public/**',
+      },
     ],
   },
 };
