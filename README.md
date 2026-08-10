@@ -22,3 +22,6 @@ Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
 - [Documentación de Next.js](https://nextjs.org/docs)
 - [Documentación de Supabase](https://supabase.com/docs)
+
+## Deployment URL
+https://supabase-fundamentos-kappa.vercel.app/
